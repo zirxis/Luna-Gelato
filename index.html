@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luna Gelato | Artisan Italian Gelato Experience</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700;800&family=Playfair+Display:wght@400;500;700;900&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="https://i.ibb.co/99R7NQgd/475553940-1417513839213665-2047549578266460918-n.jpg" alt="Luna Gelato Logo" class="logo-image">
+        </div>
+        <ul class="nav-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Where Time Slows Down<br>and Gelato Awakens the Soul</h2>
+            <p>Welcome to our world of coffee, ice cream, and sweets — where every taste tells a story.</p>
+            <a href="#menu" class="btn btn-primary">Discover Our Craft</a>
+            <div class="hero-decor">
+                <div class="decoration leaf"></div>
+                <div class="decoration leaf second"></div>
+                <div class="decoration ice-cream"></div>
+                <div class="decoration ice-cream second"></div>
+            </div>
+			<video width="50%" controls>
+  <source src="intro.mp4" type="video/mp4">
+  متصفحك لا يدعم تشغيل الفيديو.
+</video>
+<div class="video-container">
+  <video id="coffeeVideo">
+    <source src="videos/intro.mp4" type="video/mp4">
+  </video>
+  <button id="playPauseBtn">▶ Play</button>
+</div>
+
+        </div>
+        <div class="hero-image"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Legacy</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Welcome to our world of coffee, ice cream, and sweets — where every taste tells a story</p>
+
+                    <div class="quote">
+                        <blockquote>"The best gelato isn't measured in scoops, but in the silence between bites."</blockquote>
+                        <cite>- Signora Elena Luna, 1928</cite>
+                    </div>
+                </div>
+                <div class="https://i.ibb.co/kgktHcVz/photo-2025-08-07-20-02-26.jpg">
+                    <div class="image-overlay"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Selection</h2>
+                <div class="underline"></div>
+            </div>
+            
+            <div class="menu-tabs">
+                <button class="tab-btn active" data-tab="gelatos">Gelatos</button>
+                <button class="tab-btn" data-tab="sorbetts">Sorbetts</button>
+                <button class="tab-btn" data-tab="parfaits">coffee</button>
+                <button class="tab-btn" data-tab="specials">Specials</button>
+            </div>
+            
+            <div class="menu-content">
+                <!-- Gelatos Tab -->
+                <div class="tab-content active" id="gelatos">
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Pistachio di Sicilia</h3>
+                            <p class="price">$5.25</p>
+                        </div>
+                        <p class="description">Our signature Sicilian pistachio gelato, made with hand-shelled pistachios from Bronte and fresh cream from our local dairy. Served in our original porcelain cup.</p>
+                        <div class="badge">Classic</div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Stracciatella</h3>
+                            <p class="price">$6.50</p>
+                        </div>
+                        <p class="description">Creamy vanilla base swirled with dark chocolate shards, creating a perfect balance of sweet and rich flavors. A favorite since 1925.</p>
+                        <div class="badge">Artisan</div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Frutta della Terra</h3>
+                            <p class="price">$7.75</p>
+                        </div>
+                        <p class="description">Seasonal fruit blend featuring locally sourced berries, peaches, and figs, hand-picked at peak ripeness and gently blended into our smooth gelato base.</p>
+                        <div class="badge">Limited</div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Chocolate Amaretto</h3>
+                            <p class="price">$6.25</p>
+                        </div>
+                        <p class="description">Rich dark chocolate gelato infused with amaretto liqueur and toasted almonds, creating a complex flavor profile that evolves with each bite.</p>
+                        <div class="badge">Signature</div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Vanilla Bean</h3>
+                            <p class="price">$6.00</p>
+                        </div>
+                        <p class="description">Our house-made vanilla bean gelato using Madagascar bourbon vanilla beans, scraped fresh daily and folded into our creamy base.</p>
+                        <div class="badge">Traditional</div>
+                    </div>
+                </div>
+                
+                <!-- Sorbetts Tab -->
+                <div class="tab-content" id="sorbetts">
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Lemon Sorbetto</h3>
+                            <p class="price">$4.75</p>
+                        </div>
+                        <p class="description">Freshly squeezed lemons from our own trees, balanced with a touch of honey and served chilled. The perfect refreshment on a warm day.</p>
+                        <div class="badge">Heritage</div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Watermelon & Basil</h3>
+                            <p class="price">$5.00</p>
+                        </div>
+                        <p class="description">Juicy watermelon sorbet with a hint of fresh basil, creating a refreshing combination that captures the essence of summer.</p>
+                        <div class="badge">Relaxing</div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Orange Blossom</h3>
+                            <p class="price">$7.25</p>
+                        </div>
+                        <p class="description">A delicate orange blossom sorbet made with wildflowers from our garden, offering a floral, citrusy flavor that's both sophisticated and refreshing.</p>
+                        <div class="badge">Exquisite</div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Seasonal Fruit Sorbet</h3>
+                            <p class="price">$5.50</p>
+                        </div>
+                        <p class="description">Our chef's seasonal blend featuring the freshest fruits available, crafted into a smooth, vibrant sorbet that changes with the seasons.</p>
+                        <div class="badge">Seasonal</div>
+                    </div>
+                </div>
+                
+                <!-- Parfaits Tab -->
+                <div class="tab-content" id="parfaits">
+                    <div class="menu-item">
+                        <div class="item-info">
+						<img src="espresso.jpg" alt="اسبريسو">
+                            <h3>Espresso</h3>
+                            <p class="price">$6.25</p>
+                        </div>
+                        <p class="description">The base for all coffee drinks, a concentrated coffee served in a small amount</p>
+                        <div class="badge">Daily Special</div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="item-info">
+						<img src="Cappuccino.jpg" alt="اسبريسو">
+                            <h3>Cappuccino</h3>
+                            <p class="price">$5.25</p>
+                        </div>
+                        <p class="description">Espresso + steamed milk + thick milk foam</p>
+                        <div class="badge">Local</div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="item-info">
+						<img src="Caffè Latte.jpg" alt="اسبريسو">
+                            <h3>Caffè Latte (Latte)</h3>
+                            <p class="price">$6.75</p>
+                        </div>
+                        <p class="description">Espresso + more milk + light milk foam</p>
+                        <div class="badge">Indulgence</div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="item-info">
+						<img src="Flat White.jpg" alt="اسبريسو">
+                            <h3>Flat White</h3>
+                            <p class="price">$7.50</p>
+                        </div>
+                        <p class="description">Similar to a latte but with less milk and a very smooth foam</p>
+                        <div class="badge">Chef's Choice</div>
+                    </div>
+					<div class="menu-item">
+                        <div class="item-info">
+						<img src="Macchiato.jpg" alt="اسبريسو">
+                            <h3>Macchiato</h3>
+                            <p class="price">$7.50</p>
+                        </div>
+                        <p class="description">Espresso with just a touch or a spot of milk</p>
+                        <div class="badge">Chef's Choice</div>
+                    </div>
+					<div class="menu-item">
+                        <div class="item-info">
+						<img src="Latte Macchiato.jpg" alt="اسبريسو">
+                            <h3>Latte Macchiato</h3>
+                            <p class="price">$7.50</p>
+                        </div>
+                        <p class="description">Steamed milk topped with a shot of espresso</p>
+                        <div class="badge">Chef's Choice</div>
+                    </div>
+                </div>
+                
+                <!-- Specials Tab -->
+                <div class="tab-content" id="specials">
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Affogato Classico</h3>
+                            <p class="price">$14.50</p>
+                        </div>
+                        <p class="description">Our most cherished offering: a perfectly brewed espresso poured over a scoop of our vanilla bean gelato, served with a side of biscotti.</p>
+                        <div class="badge">Best Seller</div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Gelato Tasting Flight</h3>
+                            <p class="price">$18.00</p>
+                        </div>
+                        <p class="description">A complete experience: three varieties of our finest gelatos served with artisanal cookies and a small glass of limoncello.</p>
+                        <div class="badge">Experience</div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Make Your Own Sundae</h3>
+                            <p class="price">$45.00</p>
+                        </div>
+                        <p class="description">Choose your base gelato, toppings, and sauces to create your perfect sundae. Includes a complimentary sample of our newest flavor.</p>
+                        <div class="badge">Workshop</div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Book & Bites</h3>
+                            <p class="price">$12.00</p>
+                        </div>
+                        <p class="description">Select a book from our curated library of vintage literature and enjoy a complimentary scoop of our Reserve Pistachio gelato. Quiet corners with reading lamps available.</p>
+                        <div class="badge">Literary</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Visit Us</h2>
+                <div class="underline"></div>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Our Sanctuary</h3>
+                    <div class="address-details">
+                        
+                    </div>
+                    
+                    <h3>Hours of Serenity</h3>
+                    <div class="hours-details">
+                        <p>Monday - Friday: 7:00 AM - 7:00 PM</p>
+                        <p>Saturday - Sunday: 8:00 AM - 8:00 PM</p>
+                    </div>
+                    
+                    <h3>Contact</h3>
+                    <div class="contact-details">
+                        
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/_lunagelato_/" class="social-icon">instagram</a>
+                        
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Enhanced Google Maps Section -->
+        <div class="map-container">
+            <div class="map-header">
+                <h3>Find Your Way to Luna Gelato</h3>
+                <p>Step into our historic sanctuary where time slows down and every scoop tells a story</p>
+            </div>
+            <div id="map" class="map"></div>
+            <div class="map-footer">
+                <div class="map-location">
+                    <div class="location-icon">📍</div>
+                    <div class="location-info">
+                        <h4>Luna Gelato</h4>
+                       
+                    </div>
+                </div>
+                <div class="map-directions">
+                    <a href="https://www.google.com/maps/place/Luna+gelato/@35.4272755,7.1426835,3a,75y,90t/data=!3m8!1e2!3m6!1sCIHM0ogKEICAgID74ofWRA!2e10!3e12!6shttps:%2F%2Flh3.googleusercontent.com%2Fgps-cs-s%2FAC9h4nrAMj_x61-bzv_-zU_rZmgfLUQ__NEd1Mka75nU2R5npKBE6zjYEzj-_II_gSXM0WDIDIaGoKx7UccJgA19CMXBgQ84Is-nrF2Bgj5ggyy6gy2n0tpXGVrhEYyfBb-mgM9odWKP%3Dw203-h392-k-no!7i1080!8i2089!4m9!3m8!1s0x12f7210072f5e7cf:0xbbcbd670270ad673!8m2!3d35.4273104!4d7.1425221!10e5!14m1!1BCgIgAQ!16s%2Fg%2F11wbhksppl?hl=en-US&entry=ttu&g_ep=EgoyMDI1MDkxMC4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="btn btn-secondary">Get Directions</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="https://i.ibb.co/99R7NQgd/475553940-1417513839213665-2047549578266460918-n.jpg" alt="Luna Gelato Logo" class="logo-image">
+                    
+                </div>
+                <div class="footer-text">
+                    <p>Each scoop is a moment preserved.<br>
+                    Each ingredient, a story told.<br>
+                    Each visit, a memory made.</p>
+                </div>
+            </div>
+            <p class="copyright">&copy; 2025 Luna Gelato. All rights reserved. Crafted with love and fine ingredients.</p>
+        </div>
+    </footer>
+
+    <!-- Ice Cream Cup Animation Element -->
+    <div class="ice-cream-animation">
+        <div class="cup"></div>
+        <div class="scoop"></div>
+        <div class="drizzle"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

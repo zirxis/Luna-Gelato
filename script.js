@@ -31,18 +31,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
-const video = document.getElementById('coffeeVideo');
-const btn = document.getElementById('playPauseBtn');
-
-btn.addEventListener('click', () => {
-  if (video.paused) {
-    video.play();
-    btn.textContent = '⏸ Pause';
-  } else {
-    video.pause();
-    btn.textContent = '▶ Play';
-  }
-});
 
 // Menu Tabs Functionality
 const tabButtons = document.querySelectorAll('.tab-btn');
@@ -460,7 +448,7 @@ function loadGoogleMapsAPI() {
     
     // Create script element
     const script = document.createElement('script');
-    script.src = `https://www.google.com/maps/place/Luna+gelato/@35.4272755,7.1426835,3a,75y,90t/data=!3m8!1e2!3m6!1sCIHM0ogKEICAgID74ofWRA!2e10!3e12!6shttps:%2F%2Flh3.googleusercontent.com%2Fgps-cs-s%2FAC9h4nrAMj_x61-bzv_-zU_rZmgfLUQ__NEd1Mka75nU2R5npKBE6zjYEzj-_II_gSXM0WDIDIaGoKx7UccJgA19CMXBgQ84Is-nrF2Bgj5ggyy6gy2n0tpXGVrhEYyfBb-mgM9odWKP%3Dw203-h392-k-no!7i1080!8i2089!4m9!3m8!1s0x12f7210072f5e7cf:0xbbcbd670270ad673!8m2!3d35.4273104!4d7.1425221!10e5!14m1!1BCgIgAQ!16s%2Fg%2F11wbhksppl?hl=en-US&entry=ttu&g_ep=EgoyMDI1MDkxMC4wIKXMDSoASAFQAw%3D%3D`;
+    script.src = `https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap`;
     script.async = true;
     script.defer = true;
     
@@ -476,7 +464,7 @@ function loadGoogleMapsAPI() {
                     <p>Step into our historic sanctuary where time slows down and every scoop tells a story</p>
                 </div>
                 <div class="map-fallback">
-                    <img src="https://maps.app.goo.gl/zv9uN7zCoGfsK45Z7" alt="Luna Gelato Location" class="map">
+                    <img src="https://maps.googleapis.com/maps/api/staticmap?center=123+Vintage+Avenue,+Portland,+OR+97205&zoom=16&size=1200x500&markers=color:red%7Clabel:L%7C123+Vintage+Avenue,+Portland,+OR+97205&key=YOUR_API_KEY" alt="Luna Gelato Location" class="map">
                     <div class="map-footer">
                         <div class="map-location">
                             <div class="location-icon">📍</div>
@@ -486,7 +474,7 @@ function loadGoogleMapsAPI() {
                             </div>
                         </div>
                         <div class="map-directions">
-                            <a href="https://maps.app.goo.gl/zv9uN7zCoGfsK45Z7" target="_blank" class="btn btn-secondary">Get Directions</a>
+                            <a href="https://www.google.com/maps/dir/?api=1&destination=123+Vintage+Avenue,+Portland,+OR+97205" target="_blank" class="btn btn-secondary">Get Directions</a>
                         </div>
                     </div>
                 </div>
